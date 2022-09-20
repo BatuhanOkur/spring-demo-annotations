@@ -1,20 +1,23 @@
 package com.luv2code.springdemo;
 
+import java.util.Random;
+
 import org.springframework.stereotype.Component;
 
 @Component
 public class RandomService implements FortuneService {
 	private String[] data = {
-		"Beware of the wolf in sheep's clothing",
-		"Diligence is the mother of good luck",
-		"The journey is the reward"
+			"O ciyanno fatto bene",
+			"Resultante importante",
+			"What can I do, sometimes?"
 	};
 	
+	Random rnd = new Random();
 	
 	@Override
 	public String getFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		String theFortune = data[rnd.nextInt(data.length)];
+		return theFortune;
 	}
 
 }
