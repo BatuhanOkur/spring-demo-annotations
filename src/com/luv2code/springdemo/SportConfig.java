@@ -25,6 +25,12 @@ public class SportConfig {
 		return new SwimCoach(sadFortuneService());
 	}
 	
+	@Bean
+	public Coach footballCoach()
+	{
+		return new FootballCoach(sadFortuneService());
+	}
+	
 	
 	
 }
