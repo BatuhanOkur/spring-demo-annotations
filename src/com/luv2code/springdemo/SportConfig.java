@@ -9,6 +9,8 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:sport.properties")
 public class SportConfig {
 	
+    
+	
 	//define bean for sad fortune service
 	@Bean
 	public FortuneService sadFortuneService()
