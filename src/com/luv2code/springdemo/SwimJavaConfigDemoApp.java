@@ -12,7 +12,7 @@ public class SwimJavaConfigDemoApp {
 		
 		//get the bean from spring container
 		
-		Coach theCoach = context.getBean("swimCoach", SwimCoach.class);
+		Coach theCoach = context.getBean("footballCoach", Coach.class);
 		
 		//call a method on the bean
 		System.out.println(theCoach.getDailyWorkout());
